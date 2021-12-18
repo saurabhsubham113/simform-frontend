@@ -1,0 +1,154 @@
+.dashboard-container {
+  background-color: white;
+  max-width: 400px;
+  min-width: 310px;
+  margin: 15px auto;
+  border-radius: 10px;
+}
+
+/* placing header and header image at the flex-end center  */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 30%;
+  border-radius: 10px 10px 0 0;
+  background: skyblue;
+}
+
+.header img {
+  position: relative;
+  top: 50px;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+}
+
+.content {
+  margin-top: 70px;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name p {
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+.age {
+  font-weight: 400;
+  margin-top: 1px;
+  font-size: 1.2rem;
+  color: hsl(227, 10%, 46%);
+}
+
+.city {
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: center;
+  color: hsl(227, 10%, 46%);
+  margin-top: 12px;
+}
+.divider {
+  margin-top: 50px;
+  border-top: 1px solid hsl(0, 12%, 82%);
+}
+.card-foot {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-foot .value {
+  font-weight: 700;
+}
+
+.card-foot .title {
+  color: hsl(227, 10%, 46%);
+  margin-top: 8px;
+}
+container {
+  background-color: white;
+  height: 350px;
+  width: 340px;
+  border-radius: 10px;
+  max-width: 90%;
+}
+
+/* placing header and header image at the flex-end center  */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 30%;
+  border-radius: 10px 10px 0 0;
+  background: skyblue;
+}
+
+.header img {
+  position: relative;
+  top: 50px;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+}
+
+.content {
+  margin-top: 70px;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name p {
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+.age {
+  font-weight: 400;
+  margin-top: 1px;
+  font-size: 1.2rem;
+  color: hsl(227, 10%, 46%);
+}
+
+.city {
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: center;
+  color: hsl(227, 10%, 46%);
+  margin-top: 12px;
+}
+.divider {
+  margin-top: 50px;
+  border-top: 1px solid hsl(0, 12%, 82%);
+}
+.card-foot {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-foot .value {
+  font-weight: 700;
+}
+
+.card-foot .title {
+  color: hsl(227, 10%, 46%);
+  margin-top: 8px;
+}
