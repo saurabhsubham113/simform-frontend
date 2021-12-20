@@ -47,7 +47,7 @@ const SignUp = () => {
       setUserFound(true);
       prePopulate();
     }
-  }, []);
+  }, [location.pathname]);
 
   //handling submit for both signup and update
   const handleSignUp = async (obj, resetForm) => {
@@ -148,7 +148,7 @@ const SignUp = () => {
 
   return (
     <>
-   
+
       <h2 className="text-center text-white font-weight-bold">{userFound ? "Update User" : "Sign Up"}</h2>
       <Formik
         enableReinitialize={true}
