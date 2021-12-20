@@ -5,7 +5,9 @@
   margin: 15px auto;
   border-radius: 10px;
 }
-
+p {
+  margin: 0;
+}
 /* placing header and header image at the flex-end center  */
 .header {
   display: flex;
@@ -49,7 +51,7 @@
   color: hsl(227, 10%, 46%);
 }
 
-.city {
+.email {
   font-weight: 400;
   font-size: 1.2rem;
   text-align: center;

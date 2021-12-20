@@ -9,13 +9,12 @@ const url = process.env.REACT_APP_BASE_URL + "signin";
 
 const SignIn = () => {
   const [submitError, setSubmitError] = useState(false);
-  let errorMsg = "";
+  const [errorMsg, setErrorMsg] = useState("");
   const navigate = useNavigate();
 
   const handleSignIn = async (obj, resetForm) => {
     try {
       const res = await axios.post(url, obj);
-      console.log(res.data);
       if (res.data.success) {
         localStorage.setItem("token", res.data.data.token);
         localStorage.setItem(
@@ -28,7 +27,7 @@ const SignIn = () => {
     } catch (error) {
       setSubmitError(true);
       if (error.response && !error.response.data.success)
-        errorMsg = error.response.data.error;
+        setErrorMsg(error.response.data.error)
       resetForm();
     }
   };
@@ -64,11 +63,10 @@ const SignIn = () => {
               <div className="form-group">
                 <label htmlFor="email">Email</label>
                 <input
-                  className={`form-control ${
-                    formik.touched.email && formik.errors.email
-                      ? "error-field"
-                      : ""
-                  }`}
+                  className={`form-control ${formik.touched.email && formik.errors.email
+                    ? "error-field"
+                    : ""
+                    }`}
                   type="email"
                   id="email"
                   name="email"
@@ -82,11 +80,10 @@ const SignIn = () => {
               <div className="form-group">
                 <label htmlFor="password">Password</label>
                 <input
-                  className={`form-control ${
-                    formik.touched.password && formik.errors.password
-                      ? "error-field"
-                      : ""
-                  }`}
+                  className={`form-control ${formik.touched.password && formik.errors.password
+                    ? "error-field"
+                    : ""
+                    }`}
                   type="password"
                   id="password"
                   name="password"
@@ -104,17 +101,14 @@ const SignIn = () => {
                 Submit
               </button>
             </form>
-            <p>
-              can't remember your password?
-              <Link to="/signin">forgot password</Link>
+            <p className="text-center">
+              New to this application?
+              <Link to="/signup">sign Up</Link>
             </p>
           </div>
         )}
       </Formik>
-      <p className="text-center text-white">
-        New to this application?
-        <Link to="/signup">sign Up</Link>
-      </p>
+
     </>
   );
 };
